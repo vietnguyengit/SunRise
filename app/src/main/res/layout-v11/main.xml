@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/locationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Melbourne, AU"
+                android:textSize="25sp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="left"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sun Rise"
+                    android:textColor="#ffd700"
+                    android:textSize="17sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"/>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sun Set"
+                    android:textColor="#ff8400"
+                    android:textSize="17sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/sunriseTimeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#ffd700"
+                    android:textSize="27sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/sunsetTimeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#ff8400"
+                    android:textSize="27sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:layout_marginLeft="-20dp">
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sunpic"
+                    android:layout_gravity="center"
+                    android:paddingRight="20dp"/>
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Select City:"
+        android:textSize="15sp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/listView"
+        android:layout_alignParentLeft="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+#Internal package file, do not edit.
+#Sat Sep 30 21:06:38 AEST 2017
+2.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+5.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\icon.png
+5.set=ANDROID_RESOURCE
+3.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+6.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\listitem.xml
+2.set=ANDROID_RESOURCE
+4.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+7.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\main.xml
+7.set=ANDROID_RESOURCE
+count=9
+0.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+5.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\main.xml
+4.set=ANDROID_RESOURCE
+6.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+1.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+1.set=ANDROID_RESOURCE
+7.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+2.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\au_locations.txt
+6.set=ANDROID_RESOURCE
+0.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\sunpic.png
+3.set=ANDROID_RESOURCE
+1.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\listitem.xml
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE

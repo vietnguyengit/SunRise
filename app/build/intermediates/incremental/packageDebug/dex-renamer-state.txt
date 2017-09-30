@@ -1,0 +1,7 @@
+#Sat Sep 30 21:06:38 AEST 2017
+base.0=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ccad653604ea0283392a86a3786ee8defb22be89
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f6c0b1f9dea99dd941ed0af710f320c761572798\\classes.dex
+base.1=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f6c0b1f9dea99dd941ed0af710f320c761572798
+file.0=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ccad653604ea0283392a86a3786ee8defb22be89\\classes.dex
