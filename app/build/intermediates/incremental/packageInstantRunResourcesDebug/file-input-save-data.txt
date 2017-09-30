@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 30 21:06:38 AEST 2017
+#Sat Sep 30 23:00:47 AEST 2017
 2.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\icon.png
 5.set=ANDROID_RESOURCE

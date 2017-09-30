@@ -11,13 +11,25 @@
                     "endOffset": 95
                 },
                 "from": {
+                    "file": "C:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 52,
+                    "endOffset": 148
+                },
+                "from": {
                     "file": "C:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 44,
-                        "endOffset": 95
+                        "startOffset": 100,
+                        "endColumn": 52,
+                        "endOffset": 148
                     }
                 }
             }

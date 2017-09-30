@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="26"
+    abi="x86"
+    api-level="23"
     build-mode="COLD"
-    density="420dpi"
+    density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506769960655"
+    timestamp="1506776446920"
     token="6642270675447161782"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="254" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="49" />
+        duration="0" />
     <task
         name="verifier"
-        duration="6" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\Viet\Desktop\SunCalculator\SunCalculator\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
+        location="C:\Users\Viet\Desktop\SunCalculator\SunCalculator\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1506769329774"
+        timestamp="1506776111057"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Viet\Desktop\SunCalculator\SunCalculator\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -67,19 +67,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506769598141"
+        timestamp="1506776446920"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Viet\Desktop\SunCalculator\SunCalculator\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1506769960655"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Viet\Desktop\SunCalculator\SunCalculator\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

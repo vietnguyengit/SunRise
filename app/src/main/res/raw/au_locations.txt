@@ -99,3 +99,5 @@ Ferntree Gully,-37.88461,145.29539,Australia/Melbourne
 Adelaide Hills,-34.91118,138.70735,Australia/Adelaide
 Canning Vale,-32.05798,115.91814,Australia/Perth
 Glenmore Park,-33.79068,150.6693,Australia/Sydney
+Canterbury,-37.825,145.078,Australia/Melbourne
+Cabramatta,-33.8944,150.9375,Australia/Sydney

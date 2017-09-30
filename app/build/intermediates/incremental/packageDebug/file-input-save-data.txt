@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 30 21:06:38 AEST 2017
+#Sat Sep 30 23:00:48 AEST 2017
 2.base=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.file=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f6c0b1f9dea99dd941ed0af710f320c761572798\\classes.dex
 5.set=DEX

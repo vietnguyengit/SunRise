@@ -1,4 +1,4 @@
-#Sat Sep 30 21:06:38 AEST 2017
+#Sat Sep 30 23:00:48 AEST 2017
 base.0=C\:\\Users\\Viet\\Desktop\\SunCalculator\\SunCalculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ccad653604ea0283392a86a3786ee8defb22be89
 renamed.1=classes2.dex
 renamed.0=classes.dex

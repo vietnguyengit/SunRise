@@ -28,13 +28,15 @@ import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Main extends Activity 
 {
+
+	/* locations array list and adapter to use with ListView */
 	List<String> locations = new ArrayList<String>();
 	private Adapter mAdapter;
 
+	/* Initialised values */
 	String city_var = "Melbourne";
 	Double lat_var = -37.50;
 	Double long_var = 145.01;
@@ -48,13 +50,18 @@ public class Main extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+		/* Call convertStreamToString with au_locations.txt as parameter. */
 		convertStreamToString(getResources().openRawResource(R.raw.au_locations));
 
+		/* Initialise mAdapter and get a reference to ListView and bind them together */
 		mAdapter = new Adapter();
 		ListView listNote = (ListView) findViewById(R.id.listView);
 		listNote.setAdapter(mAdapter);
+
 		city_text = (TextView) findViewById(R.id.locationTV);
 
+		/* Display ListView's item as 1. City Name */
 		for (int i = 0; i < locations.size(); i++) {
 			String original = locations.get(i);
 			String[] separated = original.split(",");
@@ -64,13 +71,16 @@ public class Main extends Activity
 			createNewNote(city);
 		}
 
+		/* Handle action when a ListView's item is clicked */
 		listNote.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View view, int whichItem, long id) {
+				/* Call method */
 				DataPopulate(whichItem);
-				//Toast.makeText(getApplicationContext(), city_var, Toast.LENGTH_SHORT).show();
 				locationTV = city_var + ", AU";
+				/* Change TextView */
 				city_text.setText(locationTV);
+				/* Reload the screen */
 				initializeUI();
 			}
 		});
@@ -78,8 +88,12 @@ public class Main extends Activity
         initializeUI();
     }
 
+    /* num parameter is locations array index number. It's used to select the particular element.
+    * After get the string of the selected element. This method will split the array and assign
+    * values to city_var, lat_var, long_var, tz_var */
 	public void DataPopulate(int num) {
 		String original = locations.get(num);
+		/* Split by comma */
 		String[] separated = original.split(",");
 		city_var = separated[0];
 		lat_var = Double.valueOf(separated[1]);
@@ -87,10 +101,13 @@ public class Main extends Activity
 		tz_var = separated[3];
 	}
 
+	/* Add data to adapter to display to user's screen */
 	public void createNewNote(Cities n) {
 		mAdapter.addNote(n);
 	}
 
+	/* This method is used to add every lines in au_locations.txt to locations
+	 * each line is an array element. */
 	public void convertStreamToString(InputStream is) {
 		String line;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -123,6 +140,12 @@ public class Main extends Activity
 	private void updateTime(int year, int monthOfYear, int dayOfMonth)
 	{
 		TimeZone tz = TimeZone.getTimeZone(tz_var);
+		/*
+			GeoLocation geolocation = new GeoLocation(city_var, lat_var, long_var, tz);
+			Instead of initialised and fixed parameters for new GeoLocation()
+			It's now using variables: city_var, lat_var, long_var and tz
+			tz is assigned with TimeZone.getTimeZone(tz_var)
+		 */
 		GeoLocation geolocation = new GeoLocation(city_var, lat_var, long_var, tz);
 		AstronomicalCalendar ac = new AstronomicalCalendar(geolocation);
 		ac.getCalendar().set(year, monthOfYear, dayOfMonth);
@@ -147,6 +170,7 @@ public class Main extends Activity
 		}	
 	};
 
+	/* This is an inner class. It's the Adapter which used to populate data to display in ListView*/
 	public class Adapter extends BaseAdapter {
 
 		List<Cities> cityList = new ArrayList<Cities>();
@@ -168,19 +192,26 @@ public class Main extends Activity
 
 		@Override
 		public View getView(int whichItem, View view, ViewGroup viewGroup) {
+			/* Check if view has been inflated */
 			if (view == null) {
+				/* Create a LayoutInflater */
 				LayoutInflater intflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+				/* Using the listitem.xml */
 				view = intflater.inflate(R.layout.listitem, viewGroup, false);
 			}
 
+			/* Grab reference to the TextView */
 			TextView txtCity = (TextView) view.findViewById(R.id.txtCity);
+			/* Add the text to the TextView */
 			Cities temp = cityList.get(whichItem);
 			txtCity.setText(temp.getCity());
 			return view;
 		}
 
+		/* Add city to cityList */
 		public void addNote(Cities n) {
 			cityList.add(n);
+			/* Tell the Adapter that data in cityList has changed */
 			notifyDataSetChanged();
 		}
 	}

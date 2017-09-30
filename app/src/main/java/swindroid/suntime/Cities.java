@@ -2,6 +2,7 @@ package swindroid.suntime;
 
 /**
  * Created by Viet on 9/30/2017.
+ * This class handle new data of the location get from text file.
  */
 
 public class Cities {
